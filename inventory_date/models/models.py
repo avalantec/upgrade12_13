@@ -20,7 +20,7 @@ PROCUREMENT_PRIORITIES = [('0', 'Not urgent'), ('1', 'Normal'), ('2', 'Urgent'),
 class stockPicking(models.Model):
     _inherit = 'stock.picking'
 
-    @api.multi
+    #@api.multi
     def action_done(self):
         """Changes picking state to done by processing the Stock Moves of the Picking
 
