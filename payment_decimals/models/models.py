@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class AccountAbstractPayment(models.AbstractModel):
-    _inherit = 'account.abstract.payment'
+    _inherit = 'account.move'
     #amount = fields.Monetary(string='Payment Amount', required=True, digits=(18,7) )
     amount = fields.Float(string='Payment Amount', digits=(18,7), required=True)
 
